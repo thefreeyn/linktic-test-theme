@@ -281,7 +281,9 @@ add_action( 'wp_footer', 'linktic_popup_html' );
  * Ver README.md para instrucciones de configuración.
  */
 if ( ! defined( 'LINKTIC_SHEETS_WEBHOOK' ) ) {
-    define( 'LINKTIC_SHEETS_WEBHOOK', '' );
+    // Endpoint de prueba funcional — reemplazar por la URL del Google Apps Script
+    // desplegado (ver google-apps-script/Code.gs en este repositorio).
+    define( 'LINKTIC_SHEETS_WEBHOOK', 'https://httpbin.org/post' );
 }
 
 function linktic_handle_contact_form() {
