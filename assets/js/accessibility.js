@@ -87,6 +87,18 @@
     }
 
     /**
+     * Show a message inside the contact form.
+     * Uses only CSS classes to control visibility (no inline style override).
+     */
+    function showFormMessage(messageEl, text, type) {
+        messageEl.textContent = text;
+        // Remove inline style so CSS classes take full control
+        messageEl.removeAttribute('style');
+        messageEl.className = 'linktic-form-message ' + type;
+        messageEl.focus();
+    }
+
+    /**
      * Initialize contact form AJAX handler.
      */
     function initContactForm() {
@@ -101,21 +113,48 @@
 
             if (!submitBtn || !messageEl) return;
 
-            // Disable button
+            // ── Client-side validation ──────────────────────────────────
+            var nameVal    = (form.querySelector('[name="name"]').value || '').trim();
+            var emailVal   = (form.querySelector('[name="email"]').value || '').trim();
+            var messageVal = (form.querySelector('[name="message"]').value || '').trim();
+
+            if (!nameVal) {
+                showFormMessage(messageEl, 'Por favor ingresa tu nombre.', 'error');
+                form.querySelector('[name="name"]').focus();
+                return;
+            }
+            if (!emailVal) {
+                showFormMessage(messageEl, 'Por favor ingresa tu correo electrónico.', 'error');
+                form.querySelector('[name="email"]').focus();
+                return;
+            }
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailVal)) {
+                showFormMessage(messageEl, 'El correo electrónico no es válido.', 'error');
+                form.querySelector('[name="email"]').focus();
+                return;
+            }
+            if (!messageVal) {
+                showFormMessage(messageEl, 'Por favor escribe tu mensaje.', 'error');
+                form.querySelector('[name="message"]').focus();
+                return;
+            }
+
+            // ── Reset message & disable button ──────────────────────────
+            messageEl.className = 'linktic-form-message';
+            messageEl.removeAttribute('style');
             submitBtn.disabled = true;
             submitBtn.textContent = 'Enviando...';
-            messageEl.style.display = 'none';
-            messageEl.className = 'linktic-form-message';
 
-            // Build form data
+            // ── Build form data ─────────────────────────────────────────
             var formData = new FormData();
             formData.append('action', 'linktic_contact_form');
             formData.append('nonce', (typeof linkticAjax !== 'undefined') ? linkticAjax.nonce : '');
-            formData.append('name', form.querySelector('[name="name"]').value);
-            formData.append('email', form.querySelector('[name="email"]').value);
-            formData.append('phone', form.querySelector('[name="phone"]').value || '');
-            formData.append('company', form.querySelector('[name="company"]').value || '');
-            formData.append('message', form.querySelector('[name="message"]').value);
+            formData.append('name', nameVal);
+            formData.append('email', emailVal);
+            formData.append('phone', (form.querySelector('[name="phone"]').value || '').trim());
+            formData.append('company', (form.querySelector('[name="company"]').value || '').trim());
+            formData.append('message', messageVal);
 
             var ajaxUrl = (typeof linkticAjax !== 'undefined') ? linkticAjax.ajaxUrl : '/wp-admin/admin-ajax.php';
 
@@ -127,20 +166,16 @@
                 return response.json();
             })
             .then(function (data) {
-                if (data && data.data && data.data.message) {
-                    messageEl.textContent = data.data.message;
-                } else {
-                    messageEl.textContent = data.success ? '¡Enviado!' : 'Error al enviar.';
-                }
-                messageEl.className = 'linktic-form-message ' + (data.success ? 'success' : 'error');
-
+                var text = (data && data.data && data.data.message)
+                    ? data.data.message
+                    : (data.success ? '¡Mensaje enviado correctamente!' : 'Error al enviar.');
+                showFormMessage(messageEl, text, data.success ? 'success' : 'error');
                 if (data.success) {
                     form.reset();
                 }
             })
             .catch(function () {
-                messageEl.textContent = 'Error de conexión. Intenta de nuevo.';
-                messageEl.className = 'linktic-form-message error';
+                showFormMessage(messageEl, 'Error de conexión. Intenta de nuevo.', 'error');
             })
             .finally(function () {
                 submitBtn.disabled = false;
