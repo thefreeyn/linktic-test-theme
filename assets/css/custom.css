@@ -1,0 +1,637 @@
+/* ═══════════════════════════════════════════════════════════════
+   LinkTIC Test Theme – Custom Styles
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── CSS Variables ────────────────────────────────────────── */
+:root {
+    --linktic-blue-100: #001D33;
+    --linktic-blue-70: #0094FF;
+    --linktic-blue-50: #01D9FF;
+    --linktic-blue-30: #B7E6FC;
+    --linktic-blue-light: #DEF0FF;
+    --linktic-red: #E85846;
+    --linktic-yellow: #FFC046;
+    --linktic-green: #1CCE02;
+    --linktic-white: #FFFFFF;
+    --linktic-gray-light: #F5F7FA;
+    --linktic-gray: #E0E0E0;
+    --linktic-text: #001D33;
+    --linktic-bg: #FFFFFF;
+    --linktic-radius: 8px;
+    --linktic-radius-lg: 16px;
+    --linktic-shadow: 0 2px 12px rgba(0, 29, 51, 0.08);
+    --linktic-shadow-lg: 0 8px 30px rgba(0, 29, 51, 0.12);
+    --linktic-transition: 0.3s ease;
+}
+
+/* ─── Base ─────────────────────────────────────────────────── */
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--linktic-text);
+    background-color: var(--linktic-bg);
+    transition: font-size var(--linktic-transition),
+                background-color var(--linktic-transition),
+                color var(--linktic-transition);
+    line-height: 1.6;
+}
+
+/* ─── Font Size Zoom Levels ────────────────────────────────── */
+body.linktic-zoom-1 { font-size: 112.5%; }
+body.linktic-zoom-2 { font-size: 125%; }
+
+/* ─── High Contrast Mode ──────────────────────────────────── */
+body.high-contrast {
+    --linktic-text: #FFFFFF;
+    --linktic-bg: #000000;
+    --linktic-blue-100: #FFFFFF;
+    --linktic-blue-70: #00BFFF;
+    --linktic-blue-50: #00FFFF;
+    --linktic-blue-30: #333333;
+    --linktic-blue-light: #1A1A1A;
+    --linktic-gray-light: #111111;
+    --linktic-gray: #444444;
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+body.high-contrast a {
+    color: #00BFFF !important;
+}
+
+body.high-contrast img {
+    filter: contrast(1.2);
+}
+
+/* Elementor overrides for high contrast */
+body.high-contrast .elementor-section {
+    background-color: #000000 !important;
+}
+
+body.high-contrast .elementor-widget-container {
+    color: #FFFFFF !important;
+}
+
+body.high-contrast .elementor-heading-title,
+body.high-contrast .elementor-widget-text-editor,
+body.high-contrast h1, body.high-contrast h2,
+body.high-contrast h3, body.high-contrast h4,
+body.high-contrast h5, body.high-contrast h6,
+body.high-contrast p, body.high-contrast span,
+body.high-contrast li, body.high-contrast td,
+body.high-contrast th, body.high-contrast label {
+    color: #FFFFFF !important;
+}
+
+body.high-contrast .elementor-button {
+    background-color: #00BFFF !important;
+    color: #000000 !important;
+    border: 2px solid #FFFFFF !important;
+}
+
+body.high-contrast .elementor-icon-box-title,
+body.high-contrast .elementor-icon-box-description {
+    color: #FFFFFF !important;
+}
+
+body.high-contrast .elementor-counter-number-wrapper,
+body.high-contrast .elementor-counter-title {
+    color: #FFFFFF !important;
+}
+
+body.high-contrast * {
+    border-color: #555555 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ACCESSIBILITY BAR
+   ═══════════════════════════════════════════════════════════════ */
+#linktic-accessibility-bar {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#linktic-accessibility-bar button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid var(--linktic-blue-70);
+    background: var(--linktic-white);
+    color: var(--linktic-blue-70);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all var(--linktic-transition);
+    box-shadow: var(--linktic-shadow);
+    line-height: 1;
+}
+
+#linktic-accessibility-bar button:hover,
+#linktic-accessibility-bar button:focus {
+    background: var(--linktic-blue-70);
+    color: var(--linktic-white);
+    outline: 3px solid var(--linktic-blue-50);
+    outline-offset: 2px;
+}
+
+#linktic-accessibility-bar button.active {
+    background: var(--linktic-blue-70);
+    color: var(--linktic-white);
+}
+
+body.high-contrast #linktic-accessibility-bar button {
+    background: #111111 !important;
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   POPUP
+   ═══════════════════════════════════════════════════════════════ */
+#linktic-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 29, 51, 0.65);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+#linktic-popup-overlay.linktic-popup-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#linktic-popup-content {
+    background: var(--linktic-white);
+    border-radius: var(--linktic-radius-lg);
+    padding: 48px 40px;
+    max-width: 480px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 24px 60px rgba(0, 29, 51, 0.25);
+    text-align: center;
+    animation: linktic-popup-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes linktic-popup-in {
+    from {
+        transform: scale(0.85) translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+#linktic-popup-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--linktic-blue-100);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background var(--linktic-transition);
+}
+
+#linktic-popup-close:hover,
+#linktic-popup-close:focus {
+    background: var(--linktic-gray-light);
+    outline: 2px solid var(--linktic-blue-70);
+}
+
+.linktic-popup-body h3 {
+    color: var(--linktic-blue-100);
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.linktic-popup-body p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.linktic-popup-body strong {
+    color: var(--linktic-blue-70);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SINGLE LIBRO TEMPLATE
+   ═══════════════════════════════════════════════════════════════ */
+.linktic-single-libro {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+
+/* Breadcrumb */
+.libro-breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+    color: #666;
+}
+
+.libro-breadcrumb a {
+    color: var(--linktic-blue-70);
+    text-decoration: none;
+    transition: color var(--linktic-transition);
+}
+
+.libro-breadcrumb a:hover,
+.libro-breadcrumb a:focus {
+    color: var(--linktic-blue-100);
+    text-decoration: underline;
+}
+
+.libro-breadcrumb span[aria-hidden] {
+    margin: 0 8px;
+    color: #ccc;
+}
+
+/* Header layout */
+.libro-header {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 48px;
+    align-items: flex-start;
+}
+
+/* Book cover */
+.libro-portada {
+    flex: 0 0 280px;
+    border-radius: var(--linktic-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--linktic-shadow-lg);
+}
+
+.libro-portada img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.libro-portada-placeholder {
+    background: var(--linktic-blue-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 380px;
+}
+
+.placeholder-icon {
+    text-align: center;
+    color: var(--linktic-blue-70);
+}
+
+.placeholder-icon span {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Book info */
+.libro-info {
+    flex: 1;
+}
+
+.libro-titulo {
+    font-size: 2.4rem;
+    color: var(--linktic-blue-100);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.libro-autor {
+    font-size: 1.05rem;
+    color: var(--linktic-text);
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    background: var(--linktic-blue-light);
+    border-radius: var(--linktic-radius);
+    border-left: 4px solid var(--linktic-blue-70);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.libro-autor svg {
+    flex-shrink: 0;
+    color: var(--linktic-blue-70);
+}
+
+.libro-generos {
+    margin-bottom: 20px;
+}
+
+.libro-generos ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.libro-generos li a {
+    display: inline-block;
+    padding: 6px 18px;
+    background: var(--linktic-blue-70);
+    color: var(--linktic-white);
+    border-radius: 24px;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: background var(--linktic-transition);
+}
+
+.libro-generos li a:hover,
+.libro-generos li a:focus {
+    background: var(--linktic-blue-100);
+    outline: 2px solid var(--linktic-blue-50);
+}
+
+.libro-excerpt {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 16px;
+    background: var(--linktic-gray-light);
+    border-radius: var(--linktic-radius);
+}
+
+/* Content */
+.libro-contenido {
+    line-height: 1.85;
+    font-size: 1.05rem;
+    color: var(--linktic-text);
+}
+
+.libro-contenido p {
+    margin-bottom: 1.2em;
+}
+
+/* Footer / back link */
+.libro-footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--linktic-gray);
+}
+
+.libro-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--linktic-blue-70);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color var(--linktic-transition);
+}
+
+.libro-back-link:hover,
+.libro-back-link:focus {
+    color: var(--linktic-blue-100);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CONTACT FORM (custom, used via shortcode or Elementor HTML)
+   ═══════════════════════════════════════════════════════════════ */
+.linktic-contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.linktic-contact-form .form-group {
+    margin-bottom: 22px;
+}
+
+.linktic-contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: var(--linktic-blue-100);
+    font-size: 0.95rem;
+}
+
+.linktic-contact-form input,
+.linktic-contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--linktic-gray);
+    border-radius: var(--linktic-radius);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color var(--linktic-transition),
+                box-shadow var(--linktic-transition);
+    background: var(--linktic-white);
+    color: var(--linktic-text);
+    box-sizing: border-box;
+}
+
+.linktic-contact-form input:focus,
+.linktic-contact-form textarea:focus {
+    border-color: var(--linktic-blue-70);
+    box-shadow: 0 0 0 3px rgba(0, 148, 255, 0.15);
+    outline: none;
+}
+
+.linktic-contact-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.linktic-contact-form .form-submit {
+    background: var(--linktic-blue-70);
+    color: var(--linktic-white);
+    border: none;
+    padding: 14px 40px;
+    border-radius: var(--linktic-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--linktic-transition),
+                box-shadow var(--linktic-transition);
+    width: 100%;
+}
+
+.linktic-contact-form .form-submit:hover {
+    background: var(--linktic-blue-100);
+    box-shadow: var(--linktic-shadow);
+}
+
+.linktic-contact-form .form-submit:focus {
+    background: var(--linktic-blue-100);
+    outline: 3px solid var(--linktic-blue-50);
+    outline-offset: 2px;
+}
+
+.linktic-contact-form .form-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Form messages */
+.linktic-form-message {
+    padding: 14px 18px;
+    border-radius: var(--linktic-radius);
+    margin-top: 16px;
+    display: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.linktic-form-message.success {
+    background: #E8F5E9;
+    color: #2E7D32;
+    border: 1px solid #A5D6A7;
+    display: block;
+}
+
+.linktic-form-message.error {
+    background: #FFEBEE;
+    color: #C62828;
+    border: 1px solid #EF9A9A;
+    display: block;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOCUS VISIBLE (global)
+   ═══════════════════════════════════════════════════════════════ */
+*:focus-visible {
+    outline: 3px solid var(--linktic-blue-70);
+    outline-offset: 2px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .libro-header {
+        gap: 24px;
+    }
+    .libro-portada {
+        flex: 0 0 220px;
+    }
+    .libro-titulo {
+        font-size: 1.9rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .libro-header {
+        flex-direction: column;
+    }
+
+    .libro-portada {
+        flex: none;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .libro-titulo {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .libro-autor {
+        font-size: 0.95rem;
+    }
+
+    .libro-generos ul {
+        justify-content: center;
+    }
+
+    .libro-info {
+        text-align: center;
+    }
+
+    .libro-contenido {
+        font-size: 1rem;
+    }
+
+    /* Accessibility bar: bottom horizontal on mobile */
+    #linktic-accessibility-bar {
+        right: 50%;
+        top: auto;
+        bottom: 16px;
+        transform: translateX(50%);
+        flex-direction: row;
+    }
+
+    #linktic-accessibility-bar button {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    /* Popup adjustments */
+    #linktic-popup-content {
+        padding: 32px 24px;
+        margin: 16px;
+        max-width: 340px;
+    }
+
+    .linktic-popup-body h3 {
+        font-size: 22px;
+    }
+
+    .linktic-popup-body p {
+        font-size: 14px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 390px) {
+    .linktic-single-libro {
+        padding: 24px 16px 60px;
+    }
+
+    .libro-titulo {
+        font-size: 1.4rem;
+    }
+
+    .libro-portada {
+        max-width: 200px;
+    }
+
+    #linktic-accessibility-bar {
+        bottom: 10px;
+        gap: 6px;
+    }
+
+    #linktic-accessibility-bar button {
+        width: 36px;
+        height: 36px;
+        font-size: 11px;
+    }
+}
