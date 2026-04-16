@@ -25,6 +25,10 @@
 }
 
 /* ─── Base ─────────────────────────────────────────────────── */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
     color: var(--linktic-text);
@@ -633,5 +637,224 @@ body.high-contrast #linktic-accessibility-bar button {
         width: 36px;
         height: 36px;
         font-size: 11px;
+    }
+}
+
+/* =========================================================================
+   NAVIGATION WITH DROPDOWNS
+   ========================================================================= */
+
+/* Nav base */
+.linktic-nav {
+    position: relative;
+    z-index: 999;
+}
+
+.linktic-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/* Nav item wrapper (for positioning the dropdown) */
+.linktic-nav-item {
+    position: relative;
+}
+
+/* Top-level nav links */
+.linktic-nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: color 0.22s ease, background 0.22s ease;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.linktic-nav-link:hover,
+.linktic-nav-item:hover > .linktic-nav-link {
+    color: #fff;
+    background: rgba(0, 148, 255, 0.18);
+    text-decoration: none;
+}
+
+/* Chevron / arrow icon */
+.linktic-nav-arrow {
+    display: inline-flex;
+    flex-shrink: 0;
+    opacity: 0.65;
+    transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+.linktic-nav-item:hover > .linktic-nav-link .linktic-nav-arrow {
+    transform: rotate(180deg);
+    opacity: 1;
+    color: #0094FF;
+}
+
+/* CTA "Contáctanos" button */
+.linktic-nav-cta {
+    background: #0094FF;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 8px 22px;
+    border-radius: 7px;
+    margin-left: 8px;
+    box-shadow: 0 2px 10px rgba(0, 148, 255, 0.3);
+    transition: background 0.22s ease, box-shadow 0.22s ease, transform 0.18s ease;
+}
+
+.linktic-nav-cta:hover {
+    background: #01D9FF !important;
+    color: #001D33 !important;
+    box-shadow: 0 4px 20px rgba(1, 217, 255, 0.45);
+    transform: translateY(-2px);
+}
+
+/* ── Dropdown panel ─────────────────────────────────────────── */
+.linktic-submenu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    min-width: 210px;
+    background: #001D33;
+    border: 1px solid rgba(0, 148, 255, 0.2);
+    border-radius: 10px;
+    padding: 6px 0;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35),
+                0 0 0 1px rgba(0, 148, 255, 0.08);
+
+    /* Initial (hidden) state */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(-10px);
+    transition: opacity 0.22s ease,
+                transform 0.22s ease,
+                visibility 0.22s ease;
+    z-index: 10000;
+}
+
+/* Arrow caret pointing up */
+.linktic-submenu::before,
+.linktic-submenu::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.linktic-submenu::before {
+    top: -7px;
+    border-width: 0 7px 7px 7px;
+    border-bottom-color: rgba(0, 148, 255, 0.25);
+}
+.linktic-submenu::after {
+    top: -6px;
+    border-width: 0 6px 6px 6px;
+    border-bottom-color: #001D33;
+}
+
+/* Show on parent hover */
+.linktic-nav-item:hover > .linktic-submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Submenu links */
+.linktic-submenu-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 18px 10px 16px;
+    color: rgba(255, 255, 255, 0.78);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    border-left: 3px solid transparent;
+    transition: color 0.18s ease,
+                background 0.18s ease,
+                border-color 0.18s ease,
+                padding-left 0.18s ease;
+}
+
+.linktic-submenu-link:hover {
+    color: #01D9FF;
+    background: rgba(0, 148, 255, 0.12);
+    border-left-color: #0094FF;
+    padding-left: 22px;
+    text-decoration: none;
+}
+
+/* Dividers between submenu items */
+.linktic-submenu li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Staggered fade-in for submenu items when parent hovered */
+.linktic-nav-item:hover .linktic-submenu li {
+    animation: linktic-submenu-in 0.25s ease both;
+}
+.linktic-nav-item:hover .linktic-submenu li:nth-child(1) { animation-delay: 0.03s; }
+.linktic-nav-item:hover .linktic-submenu li:nth-child(2) { animation-delay: 0.07s; }
+.linktic-nav-item:hover .linktic-submenu li:nth-child(3) { animation-delay: 0.11s; }
+.linktic-nav-item:hover .linktic-submenu li:nth-child(4) { animation-delay: 0.15s; }
+
+@keyframes linktic-submenu-in {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .linktic-nav-link {
+        font-size: 12.5px;
+        padding: 7px 10px;
+    }
+    .linktic-nav-cta {
+        padding: 7px 16px;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 680px) {
+    .linktic-nav-list {
+        gap: 1px;
+    }
+    .linktic-nav-link {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+    .linktic-nav-arrow {
+        display: none;
+    }
+    .linktic-submenu {
+        display: none;
     }
 }

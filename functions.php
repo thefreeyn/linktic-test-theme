@@ -499,3 +499,73 @@ function linktic_contact_form_shortcode() {
     return ob_get_clean();
 }
 add_shortcode( 'linktic_contact_form', 'linktic_contact_form_shortcode' );
+
+/* =========================================================================
+   9. NAVIGATION MENU WITH DROPDOWNS
+   ========================================================================= */
+
+function linktic_nav_shortcode() {
+    ob_start();
+    ?>
+    <nav class="linktic-nav" role="navigation" aria-label="Menú principal">
+        <ul class="linktic-nav-list">
+
+            <li class="linktic-nav-item has-submenu">
+                <a href="#servicios" class="linktic-nav-link" aria-haspopup="true" aria-expanded="false">
+                    Servicios
+                    <svg class="linktic-nav-arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </a>
+                <ul class="linktic-submenu" role="menu">
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Consultoría TI</a></li>
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Desarrollo de Software</a></li>
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Ciberseguridad</a></li>
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Cloud &amp; Infraestructura</a></li>
+                </ul>
+            </li>
+
+            <li class="linktic-nav-item has-submenu">
+                <a href="#empresa" class="linktic-nav-link" aria-haspopup="true" aria-expanded="false">
+                    Empresa
+                    <svg class="linktic-nav-arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </a>
+                <ul class="linktic-submenu" role="menu">
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Quiénes Somos</a></li>
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Historia</a></li>
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Sostenibilidad</a></li>
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Noticias</a></li>
+                </ul>
+            </li>
+
+            <li class="linktic-nav-item has-submenu">
+                <a href="#clientes" class="linktic-nav-link" aria-haspopup="true" aria-expanded="false">
+                    Nuestro Talento
+                    <svg class="linktic-nav-arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </a>
+                <ul class="linktic-submenu" role="menu">
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Únete a LinkTIC</a></li>
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Cultura Organizacional</a></li>
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Bienestar</a></li>
+                </ul>
+            </li>
+
+            <li class="linktic-nav-item has-submenu">
+                <a href="#blog" class="linktic-nav-link" aria-haspopup="true" aria-expanded="false">
+                    Blog
+                    <svg class="linktic-nav-arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </a>
+                <ul class="linktic-submenu" role="menu">
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Artículos</a></li>
+                    <li role="none"><a href="#" role="menuitem" class="linktic-submenu-link">Casos de Éxito</a></li>
+                </ul>
+            </li>
+
+            <li class="linktic-nav-item">
+                <a href="#contacto" class="linktic-nav-link linktic-nav-cta">Contáctanos</a>
+            </li>
+
+        </ul>
+    </nav>
+    <?php
+    return ob_get_clean();
+}
+add_shortcode( 'linktic_nav', 'linktic_nav_shortcode' );
