@@ -1,0 +1,1547 @@
+{
+    "content": [
+        {
+            "id": "a1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "gap": "no",
+                "structure": "20",
+                "background_background": "classic",
+                "background_color": "#001D33",
+                "padding": {
+                    "unit": "px",
+                    "top": "12",
+                    "right": "30",
+                    "bottom": "12",
+                    "left": "30",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "a1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": 70
+                    },
+                    "elements": [
+                        {
+                            "id": "a1000003",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "LinkTIC",
+                                "header_size": "h1",
+                                "title_color": "#FFFFFF",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28
+                                },
+                                "typography_font_weight": "800"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "a1000004",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": 30,
+                        "align": "right"
+                    },
+                    "elements": [
+                        {
+                            "id": "a1000005",
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<nav style=\"display:flex;gap:24px;justify-content:flex-end;align-items:center;flex-wrap:wrap;\">\n  <a href=\"#servicios\" style=\"color:#fff;text-decoration:none;font-size:14px;font-weight:500;\">Servicios</a>\n  <a href=\"#empresa\" style=\"color:#fff;text-decoration:none;font-size:14px;font-weight:500;\">Empresa</a>\n  <a href=\"#clientes\" style=\"color:#fff;text-decoration:none;font-size:14px;font-weight:500;\">Nuestro Talento</a>\n  <a href=\"#blog\" style=\"color:#fff;text-decoration:none;font-size:14px;font-weight:500;\">Blog</a>\n  <a href=\"#contacto\" style=\"background:#0094FF;color:#fff;text-decoration:none;padding:8px 20px;border-radius:6px;font-size:14px;font-weight:600;\">Contáctanos</a>\n</nav>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "b1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "gap": "default",
+                "structure": "20",
+                "background_background": "gradient",
+                "background_color": "#001D33",
+                "background_color_b": "#003366",
+                "background_gradient_angle": {
+                    "unit": "deg",
+                    "size": 135
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "120",
+                    "right": "40",
+                    "bottom": "120",
+                    "left": "40",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1200
+                }
+            },
+            "elements": [
+                {
+                    "id": "b1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": 55,
+                        "content_position": "center"
+                    },
+                    "elements": [
+                        {
+                            "id": "b1000003",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Lorem ipsum dolor sit amet consectetur",
+                                "header_size": "h1",
+                                "title_color": "#FFFFFF",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 48
+                                },
+                                "typography_font_weight": "800",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.15
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "b1000004",
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style=\"color:#B7E6FC;font-size:18px;line-height:1.7;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>",
+                                "text_color": "#B7E6FC"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "b1000005",
+                            "elType": "widget",
+                            "widgetType": "button",
+                            "settings": {
+                                "text": "Descubre más",
+                                "link": {
+                                    "url": "#servicios",
+                                    "is_external": false,
+                                    "nofollow": false
+                                },
+                                "background_color": "#0094FF",
+                                "button_text_color": "#FFFFFF",
+                                "border_radius": {
+                                    "unit": "px",
+                                    "top": "8",
+                                    "right": "8",
+                                    "bottom": "8",
+                                    "left": "8",
+                                    "isLinked": true
+                                },
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16
+                                },
+                                "typography_font_weight": "600",
+                                "button_padding": {
+                                    "unit": "px",
+                                    "top": "16",
+                                    "right": "40",
+                                    "bottom": "16",
+                                    "left": "40",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "b1000006",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": 45,
+                        "content_position": "center"
+                    },
+                    "elements": [
+                        {
+                            "id": "b1000007",
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style=\"background:linear-gradient(135deg,#0094FF 0%,#01D9FF 100%);border-radius:20px;padding:80px 40px;text-align:center;\">\n  <svg width=\"120\" height=\"120\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\" opacity=\"0.6\">\n    <rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"/>\n    <line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"/>\n    <line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"21\"/>\n  </svg>\n  <p style=\"color:#fff;margin-top:16px;font-size:14px;opacity:0.7;\">Imagen Hero Placeholder</p>\n</div>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "c1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "default",
+                "structure": "10",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "20",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                },
+                "css_classes": "servicios-section"
+            },
+            "elements": [
+                {
+                    "id": "c1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "id": "c1000003",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Soluciones Digitales",
+                                "align": "center",
+                                "title_color": "#001D33",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 14
+                                },
+                                "typography_font_weight": "600",
+                                "typography_text_transform": "uppercase",
+                                "typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 2
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "c1000004",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Lorem ipsum dolor sit amet adipiscing",
+                                "header_size": "h2",
+                                "align": "center",
+                                "title_color": "#001D33",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 38
+                                },
+                                "typography_font_weight": "700",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.2
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "c2000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "extended",
+                "structure": "40",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "padding": {
+                    "unit": "px",
+                    "top": "20",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "c2000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25,
+                        "_inline_size": 25
+                    },
+                    "elements": [
+                        {
+                            "id": "c2000003",
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-chart-bar",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Business Intelligence & Big Data",
+                                "description_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+                                "icon_color": "#0094FF",
+                                "title_color": "#001D33",
+                                "description_color": "#555555",
+                                "position": "top",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18
+                                },
+                                "title_typography_font_weight": "600"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "c2000004",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25,
+                        "_inline_size": 25
+                    },
+                    "elements": [
+                        {
+                            "id": "c2000005",
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-code",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Fábrica de Software",
+                                "description_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud.",
+                                "icon_color": "#01D9FF",
+                                "title_color": "#001D33",
+                                "description_color": "#555555",
+                                "position": "top",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18
+                                },
+                                "title_typography_font_weight": "600"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "c2000006",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25,
+                        "_inline_size": 25
+                    },
+                    "elements": [
+                        {
+                            "id": "c2000007",
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-bullhorn",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Marketing Digital",
+                                "description_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit.",
+                                "icon_color": "#E85846",
+                                "title_color": "#001D33",
+                                "description_color": "#555555",
+                                "position": "top",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18
+                                },
+                                "title_typography_font_weight": "600"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "c2000008",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25,
+                        "_inline_size": 25
+                    },
+                    "elements": [
+                        {
+                            "id": "c2000009",
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-cloud",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Infraestructura en la Nube",
+                                "description_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat.",
+                                "icon_color": "#1CCE02",
+                                "title_color": "#001D33",
+                                "description_color": "#555555",
+                                "position": "top",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18
+                                },
+                                "title_typography_font_weight": "600"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "d1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "default",
+                "structure": "10",
+                "background_background": "classic",
+                "background_color": "#F5F7FA",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "d1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "id": "d1000003",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Clientes y Alianzas",
+                                "header_size": "h2",
+                                "align": "center",
+                                "title_color": "#001D33",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 36
+                                },
+                                "typography_font_weight": "700"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "d1000004",
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style=\"text-align:center;color:#555;max-width:700px;margin:0 auto 40px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam.</p>",
+                                "align": "center"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "d1000005",
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style=\"display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:24px;align-items:center;justify-items:center;padding:20px 0;\">\n  <div style=\"background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,29,51,0.06);display:flex;align-items:center;justify-content:center;min-height:80px;width:100%;\"><span style=\"color:#999;font-size:13px;\">Cliente 1</span></div>\n  <div style=\"background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,29,51,0.06);display:flex;align-items:center;justify-content:center;min-height:80px;width:100%;\"><span style=\"color:#999;font-size:13px;\">Cliente 2</span></div>\n  <div style=\"background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,29,51,0.06);display:flex;align-items:center;justify-content:center;min-height:80px;width:100%;\"><span style=\"color:#999;font-size:13px;\">Cliente 3</span></div>\n  <div style=\"background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,29,51,0.06);display:flex;align-items:center;justify-content:center;min-height:80px;width:100%;\"><span style=\"color:#999;font-size:13px;\">Cliente 4</span></div>\n  <div style=\"background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,29,51,0.06);display:flex;align-items:center;justify-content:center;min-height:80px;width:100%;\"><span style=\"color:#999;font-size:13px;\">Cliente 5</span></div>\n  <div style=\"background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,29,51,0.06);display:flex;align-items:center;justify-content:center;min-height:80px;width:100%;\"><span style=\"color:#999;font-size:13px;\">Cliente 6</span></div>\n  <div style=\"background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,29,51,0.06);display:flex;align-items:center;justify-content:center;min-height:80px;width:100%;\"><span style=\"color:#999;font-size:13px;\">Cliente 7</span></div>\n  <div style=\"background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,29,51,0.06);display:flex;align-items:center;justify-content:center;min-height:80px;width:100%;\"><span style=\"color:#999;font-size:13px;\">Cliente 8</span></div>\n</div>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "e1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "extended",
+                "structure": "30",
+                "background_background": "classic",
+                "background_color": "#001D33",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "e1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 33
+                    },
+                    "elements": [
+                        {
+                            "id": "e1000003",
+                            "elType": "widget",
+                            "widgetType": "counter",
+                            "settings": {
+                                "starting_number": 0,
+                                "ending_number": 15,
+                                "prefix": "+",
+                                "suffix": "",
+                                "title": "Años de innovación",
+                                "number_color": "#0094FF",
+                                "title_color": "#B7E6FC",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 56
+                                },
+                                "typography_font_weight": "800"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "e1000004",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 33
+                    },
+                    "elements": [
+                        {
+                            "id": "e1000005",
+                            "elType": "widget",
+                            "widgetType": "counter",
+                            "settings": {
+                                "starting_number": 0,
+                                "ending_number": 500,
+                                "prefix": "+",
+                                "suffix": "",
+                                "title": "Proyectos exitosos",
+                                "number_color": "#01D9FF",
+                                "title_color": "#B7E6FC",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 56
+                                },
+                                "typography_font_weight": "800"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "e1000006",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 33
+                    },
+                    "elements": [
+                        {
+                            "id": "e1000007",
+                            "elType": "widget",
+                            "widgetType": "counter",
+                            "settings": {
+                                "starting_number": 0,
+                                "ending_number": 200,
+                                "prefix": "+",
+                                "suffix": "",
+                                "title": "Colaboradores certificados",
+                                "number_color": "#FFC046",
+                                "title_color": "#B7E6FC",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 56
+                                },
+                                "typography_font_weight": "800"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "f1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "default",
+                "structure": "10",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "20",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "f1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "id": "f1000003",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Certificaciones",
+                                "header_size": "h2",
+                                "align": "center",
+                                "title_color": "#001D33",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 36
+                                },
+                                "typography_font_weight": "700"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "f1000004",
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style=\"text-align:center;color:#555;max-width:700px;margin:0 auto 40px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nuestras certificaciones garantizan confianza y excelencia.</p>",
+                                "align": "center"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "f2000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "extended",
+                "structure": "30",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "f2000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 33
+                    },
+                    "elements": [
+                        {
+                            "id": "f2000003",
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-award",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "CMMI Nivel 3",
+                                "description_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit tempor.",
+                                "icon_color": "#0094FF",
+                                "title_color": "#001D33",
+                                "description_color": "#555555",
+                                "position": "top",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16
+                                },
+                                "title_typography_font_weight": "600"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "f2000004",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 33
+                    },
+                    "elements": [
+                        {
+                            "id": "f2000005",
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-certificate",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "ISO 9001",
+                                "description_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit labore.",
+                                "icon_color": "#01D9FF",
+                                "title_color": "#001D33",
+                                "description_color": "#555555",
+                                "position": "top",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16
+                                },
+                                "title_typography_font_weight": "600"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "f2000006",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 33
+                    },
+                    "elements": [
+                        {
+                            "id": "f2000007",
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-shield-alt",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "ISO 27001",
+                                "description_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit veniam.",
+                                "icon_color": "#1CCE02",
+                                "title_color": "#001D33",
+                                "description_color": "#555555",
+                                "position": "top",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16
+                                },
+                                "title_typography_font_weight": "600"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "g1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "default",
+                "structure": "10",
+                "background_background": "classic",
+                "background_color": "#DEF0FF",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "20",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "g1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "id": "g1000003",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Proyectos Destacados",
+                                "header_size": "h2",
+                                "align": "center",
+                                "title_color": "#001D33",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 36
+                                },
+                                "typography_font_weight": "700"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "g1000004",
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style=\"text-align:center;color:#555;max-width:700px;margin:0 auto 40px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Conoce nuestros proyectos más exitosos.</p>",
+                                "align": "center"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "g2000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "extended",
+                "structure": "30",
+                "background_background": "classic",
+                "background_color": "#DEF0FF",
+                "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "g2000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 33
+                    },
+                    "elements": [
+                        {
+                            "id": "g2000003",
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style=\"background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,29,51,0.08);\">\n  <div style=\"background:linear-gradient(135deg,#0094FF,#01D9FF);height:200px;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"color:#fff;font-size:14px;opacity:0.8;\">Imagen Proyecto 1</span>\n  </div>\n  <div style=\"padding:24px;\">\n    <h4 style=\"color:#001D33;font-size:18px;margin:0 0 8px;font-weight:600;\">Proyecto Lorem Ipsum</h4>\n    <p style=\"color:#555;font-size:14px;line-height:1.6;margin:0;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>\n  </div>\n</div>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "g2000004",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 33
+                    },
+                    "elements": [
+                        {
+                            "id": "g2000005",
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style=\"background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,29,51,0.08);\">\n  <div style=\"background:linear-gradient(135deg,#001D33,#0094FF);height:200px;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"color:#fff;font-size:14px;opacity:0.8;\">Imagen Proyecto 2</span>\n  </div>\n  <div style=\"padding:24px;\">\n    <h4 style=\"color:#001D33;font-size:18px;margin:0 0 8px;font-weight:600;\">Proyecto Dolor Sit</h4>\n    <p style=\"color:#555;font-size:14px;line-height:1.6;margin:0;\">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>\n  </div>\n</div>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "g2000006",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 33
+                    },
+                    "elements": [
+                        {
+                            "id": "g2000007",
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style=\"background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,29,51,0.08);\">\n  <div style=\"background:linear-gradient(135deg,#01D9FF,#0094FF);height:200px;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"color:#fff;font-size:14px;opacity:0.8;\">Imagen Proyecto 3</span>\n  </div>\n  <div style=\"padding:24px;\">\n    <h4 style=\"color:#001D33;font-size:18px;margin:0 0 8px;font-weight:600;\">Proyecto Amet Elit</h4>\n    <p style=\"color:#555;font-size:14px;line-height:1.6;margin:0;\">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>\n  </div>\n</div>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "h1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "default",
+                "structure": "10",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "h1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "id": "h1000003",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Partners",
+                                "header_size": "h2",
+                                "align": "center",
+                                "title_color": "#001D33",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 36
+                                },
+                                "typography_font_weight": "700"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "h1000004",
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style=\"text-align:center;color:#555;max-width:700px;margin:0 auto 40px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contamos con alianzas de grandes compañías a nivel mundial.</p>",
+                                "align": "center"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "h1000005",
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style=\"display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:40px;padding:20px 0;\">\n  <div style=\"background:#F5F7FA;border-radius:12px;padding:24px 32px;min-width:140px;text-align:center;\"><span style=\"color:#666;font-weight:600;font-size:14px;\">Partner 1</span></div>\n  <div style=\"background:#F5F7FA;border-radius:12px;padding:24px 32px;min-width:140px;text-align:center;\"><span style=\"color:#666;font-weight:600;font-size:14px;\">Partner 2</span></div>\n  <div style=\"background:#F5F7FA;border-radius:12px;padding:24px 32px;min-width:140px;text-align:center;\"><span style=\"color:#666;font-weight:600;font-size:14px;\">Partner 3</span></div>\n  <div style=\"background:#F5F7FA;border-radius:12px;padding:24px 32px;min-width:140px;text-align:center;\"><span style=\"color:#666;font-weight:600;font-size:14px;\">Partner 4</span></div>\n  <div style=\"background:#F5F7FA;border-radius:12px;padding:24px 32px;min-width:140px;text-align:center;\"><span style=\"color:#666;font-weight:600;font-size:14px;\">Partner 5</span></div>\n  <div style=\"background:#F5F7FA;border-radius:12px;padding:24px 32px;min-width:140px;text-align:center;\"><span style=\"color:#666;font-weight:600;font-size:14px;\">Partner 6</span></div>\n</div>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "i1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "gap": "extended",
+                "structure": "20",
+                "background_background": "classic",
+                "background_color": "#F5F7FA",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "i1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": 45,
+                        "content_position": "center"
+                    },
+                    "elements": [
+                        {
+                            "id": "i1000003",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Contáctanos",
+                                "header_size": "h2",
+                                "title_color": "#001D33",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 36
+                                },
+                                "typography_font_weight": "700"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "i1000004",
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style=\"color:#555;font-size:16px;line-height:1.7;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                                "text_color": "#555555"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "i1000005",
+                            "elType": "widget",
+                            "widgetType": "icon-list",
+                            "settings": {
+                                "icon_list": [
+                                    {
+                                        "text": "Cra. 53 #100-25, Suba, Bogotá, Colombia",
+                                        "selected_icon": {
+                                            "value": "fas fa-map-marker-alt",
+                                            "library": "fa-solid"
+                                        },
+                                        "_id": "il001"
+                                    },
+                                    {
+                                        "text": "(601) 770 2692",
+                                        "selected_icon": {
+                                            "value": "fas fa-phone",
+                                            "library": "fa-solid"
+                                        },
+                                        "_id": "il002"
+                                    },
+                                    {
+                                        "text": "contacto@linktic.com",
+                                        "selected_icon": {
+                                            "value": "fas fa-envelope",
+                                            "library": "fa-solid"
+                                        },
+                                        "_id": "il003"
+                                    }
+                                ],
+                                "icon_color": "#0094FF",
+                                "text_color": "#001D33",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 16
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "i1000006",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": 55
+                    },
+                    "elements": [
+                        {
+                            "id": "i1000007",
+                            "elType": "widget",
+                            "widgetType": "shortcode",
+                            "settings": {
+                                "shortcode": "[linktic_contact_form]"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "j1000001",
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "gap": "default",
+                "structure": "40",
+                "background_background": "classic",
+                "background_color": "#001D33",
+                "padding": {
+                    "unit": "px",
+                    "top": "60",
+                    "right": "40",
+                    "bottom": "30",
+                    "left": "40",
+                    "isLinked": false
+                },
+                "content_width": {
+                    "unit": "px",
+                    "size": 1140
+                }
+            },
+            "elements": [
+                {
+                    "id": "j1000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25,
+                        "_inline_size": 30
+                    },
+                    "elements": [
+                        {
+                            "id": "j1000003",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "LinkTIC",
+                                "header_size": "h3",
+                                "title_color": "#FFFFFF",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Inter",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 24
+                                },
+                                "typography_font_weight": "800"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "j1000004",
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style=\"color:#B7E6FC;font-size:14px;line-height:1.7;\">Cra. 53 #100-25, Suba,<br>Bogotá, Colombia</p><p style=\"color:#B7E6FC;font-size:14px;\"><strong>Tel:</strong> (601) 770 2692<br><strong>Email:</strong> contacto@linktic.com</p>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "j1000005",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25,
+                        "_inline_size": 22
+                    },
+                    "elements": [
+                        {
+                            "id": "j1000006",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "ACCESOS",
+                                "header_size": "h4",
+                                "title_color": "#FFFFFF",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 14
+                                },
+                                "typography_font_weight": "700",
+                                "typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 1
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "j1000007",
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<ul style=\"list-style:none;padding:0;margin:0;\">\n  <li style=\"margin-bottom:8px;\"><a href=\"#\" style=\"color:#B7E6FC;text-decoration:none;font-size:14px;\">Blog</a></li>\n  <li style=\"margin-bottom:8px;\"><a href=\"#\" style=\"color:#B7E6FC;text-decoration:none;font-size:14px;\">Sobre nosotros</a></li>\n  <li style=\"margin-bottom:8px;\"><a href=\"#\" style=\"color:#B7E6FC;text-decoration:none;font-size:14px;\">Sala de prensa</a></li>\n  <li style=\"margin-bottom:8px;\"><a href=\"#\" style=\"color:#B7E6FC;text-decoration:none;font-size:14px;\">Contáctanos</a></li>\n  <li style=\"margin-bottom:8px;\"><a href=\"#\" style=\"color:#B7E6FC;text-decoration:none;font-size:14px;\">Mapa del sitio</a></li>\n</ul>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "j1000008",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25,
+                        "_inline_size": 22
+                    },
+                    "elements": [
+                        {
+                            "id": "j1000009",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "SOCIAL",
+                                "header_size": "h4",
+                                "title_color": "#FFFFFF",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 14
+                                },
+                                "typography_font_weight": "700",
+                                "typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 1
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "j1000010",
+                            "elType": "widget",
+                            "widgetType": "social-icons",
+                            "settings": {
+                                "social_icon_list": [
+                                    {
+                                        "social_icon": {
+                                            "value": "fab fa-instagram",
+                                            "library": "fa-brands"
+                                        },
+                                        "link": { "url": "https://www.instagram.com/linktic/" },
+                                        "_id": "si001"
+                                    },
+                                    {
+                                        "social_icon": {
+                                            "value": "fab fa-facebook-f",
+                                            "library": "fa-brands"
+                                        },
+                                        "link": { "url": "https://www.facebook.com/linktic" },
+                                        "_id": "si002"
+                                    },
+                                    {
+                                        "social_icon": {
+                                            "value": "fab fa-linkedin-in",
+                                            "library": "fa-brands"
+                                        },
+                                        "link": { "url": "https://www.linkedin.com/company/linktic-sas/" },
+                                        "_id": "si003"
+                                    },
+                                    {
+                                        "social_icon": {
+                                            "value": "fab fa-youtube",
+                                            "library": "fa-brands"
+                                        },
+                                        "link": { "url": "https://www.youtube.com/@LinkTIC_CO" },
+                                        "_id": "si004"
+                                    },
+                                    {
+                                        "social_icon": {
+                                            "value": "fab fa-tiktok",
+                                            "library": "fa-brands"
+                                        },
+                                        "link": { "url": "https://www.tiktok.com/@linktic" },
+                                        "_id": "si005"
+                                    }
+                                ],
+                                "icon_color": "custom",
+                                "icon_primary_color": "#0094FF",
+                                "icon_secondary_color": "#FFFFFF",
+                                "shape": "circle"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "j1000011",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25,
+                        "_inline_size": 26
+                    },
+                    "elements": [
+                        {
+                            "id": "j1000012",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "LEGAL",
+                                "header_size": "h4",
+                                "title_color": "#FFFFFF",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 14
+                                },
+                                "typography_font_weight": "700",
+                                "typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 1
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false
+                        },
+                        {
+                            "id": "j1000013",
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<ul style=\"list-style:none;padding:0;margin:0;\">\n  <li style=\"margin-bottom:8px;\"><a href=\"#\" style=\"color:#B7E6FC;text-decoration:none;font-size:14px;\">Política de cookies</a></li>\n  <li style=\"margin-bottom:8px;\"><a href=\"#\" style=\"color:#B7E6FC;text-decoration:none;font-size:14px;\">Tratamiento de datos personales</a></li>\n  <li style=\"margin-bottom:8px;\"><a href=\"#\" style=\"color:#B7E6FC;text-decoration:none;font-size:14px;\">Política de privacidad</a></li>\n</ul>"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+
+        {
+            "id": "j2000001",
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "gap": "no",
+                "structure": "10",
+                "background_background": "classic",
+                "background_color": "#001D33",
+                "padding": {
+                    "unit": "px",
+                    "top": "20",
+                    "right": "40",
+                    "bottom": "20",
+                    "left": "40",
+                    "isLinked": false
+                },
+                "border_border": "solid",
+                "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "border_color": "#0A3050"
+            },
+            "elements": [
+                {
+                    "id": "j2000002",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "id": "j2000003",
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style=\"text-align:center;color:#6A8FAA;font-size:13px;margin:0;\">© 2026 LinkTIC S.A.S. Todos los derechos reservados.</p>",
+                                "align": "center"
+                            },
+                            "elements": [],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ],
+    "page_settings": [],
+    "version": "0.4",
+    "title": "Home - LinkTIC Landing",
+    "type": "page"
+}
